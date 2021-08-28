@@ -34,7 +34,7 @@
     float: right;
 }
 
-#goBack {
+.go-back {
     background-color: darkcyan;
     position: relative;
     padding: 10px;
@@ -49,7 +49,7 @@
 
 
 
-#clear {
+.clear {
     background-color: darkcyan;
     position: relative;
     padding: 10px;
@@ -60,7 +60,7 @@
     text-align: center;
 }
 
-button {
+.button {
     border-radius: 8px;
 } 
 
@@ -69,7 +69,7 @@ textarea {
     margin: 20px;
 }
 
-#Submit {
+.submit {
     background-color: darkcyan;
     margin-left: 33%;
     padding: 15px 32px;

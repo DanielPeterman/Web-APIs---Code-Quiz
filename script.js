@@ -6,32 +6,34 @@ var questions = [
         answer: "alerts"
     },
     {
-        title: "The condition in an if / else statement is enclosed within ____.",
+        title: "The condition in an if / else statement is enclosed within _____.",
         choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
         answer: "parentheses"
     },
     {
-        title: "Arrays in Javascript can be used to store ____.",
+        title: "Arrays in Javascript can be used to store _____.",
         choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
         answer: "all of the above"
     },
     {
-        title: "String values must be enclosed within ____ when being assigned to variables.",
+        title: "String values must be enclosed within _____ when being assigned to variables.",
         choices: ["commas", "curly brackets", "quotes", "parenthesis"],
         answer: "quotes"
     },
     {
-        title: "A very useful tool for used during development and debugging for printing content to the debugger is:",
+        title: "A useful tool used during development and debugging for printing content to the debugger is:",
         choices: ["Javascript", "terminal / bash", "for loops", "console log"],
         answer: "console log"
     },
 
 ];
+
 // Declared variables
 var score = 0;
 var questionIndex = 0;
 
 // Start working code 
+// Variables
 var wrapper = document.querySelector(".wrapper");
 var currentTime = document.querySelector(".current-time");
 var timer = document.querySelector(".start-time");
@@ -41,9 +43,8 @@ var secondsLeft = 76;
 var holdInterval = 0;
 var penalty = 10;
 
-// Triggers timer on button, shows user a display on the screen
+// Starts clock
 timer.addEventListener("click", function () {
-    // We are checking zero because its originally set to zero
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
             secondsLeft--;
@@ -52,7 +53,7 @@ timer.addEventListener("click", function () {
             if (secondsLeft <= 0) {
                 clearInterval(holdInterval);
                 allDone();
-                currentTime.textContent = "Time's up!";
+                currentTime.textContent = "Time is up!";
             }
         }, 1000);
     }
@@ -78,7 +79,7 @@ function render(questionIndex) {
         listItem.addEventListener("click", (compare));
     })
 }
-// Event that compares choices
+// Event that compares answers
 function compare(event) {
     var element = event.target;
 
@@ -119,7 +120,7 @@ function allDone() {
     // Heading:
     var createH1 = document.createElement("h1");
     createH1.setAttribute("id", "createH1");
-    createH1.textContent = "All Done!"
+    createH1.textContent = "Complete!"
 
     questionsDiv.appendChild(createH1);
 
@@ -168,7 +169,7 @@ function allDone() {
 
         if (initials === null) {
 
-            console.log("No value entered!");
+            console.log("Enter a value...");
 
         } else {
             var finalScore = {

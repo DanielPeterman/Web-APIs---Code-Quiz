@@ -24,7 +24,7 @@ In order to open the github project repository visit: ("https://github.com/Danie
 
 In order to open this project page, please visit: ("https://danielpeterman.github.io/Web-APIs---Code-Quiz/") within any web browser.
 
-![Web API Coding Quiz](./)
+![Web API Coding Quiz](./Images/Screenshot.png)
 # Credits
 
 N/A

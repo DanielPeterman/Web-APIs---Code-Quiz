@@ -9,10 +9,10 @@
     left: 30%;
     top: 50%;
     width: 500px;
-    height: 375px;
-    padding-top: 40px;
-    margin-top: 150px;
-    border: 2px solid darkcyan;
+    height: 400px;
+    padding-top: 75px;
+    margin-top: 175px;
+    border: 3px solid darkcyan;
 }
 
 .button {
@@ -24,8 +24,7 @@
 .start-time {
     width: 40%;
     background-color:darkcyan;
-    font-size: 25px;
-    color: black;
+    font-size: 30px;
 }
 
 .questions {
@@ -39,16 +38,11 @@
     margin-left: 50px;
 }
 
-.current-time {
-    float: right;
-}
-
 .go-back {
     background-color: darkcyan;
     position: absolute;
     padding: 15px;
     font-size: 20px;
-    color: white;
     top: 66%;
     left: 50%;
     width: 150px;
@@ -60,16 +54,11 @@
     position: absolute;
     padding: 10px;
     font-size: 20px;
-    color: white;
     top: 66%;
     left: 15%;
     height: 57px;
     text-align: center;
 }
-
-.button {
-    border-radius: 8px;
-} 
 
 textarea {
     width: 90%;
@@ -79,9 +68,8 @@ textarea {
 .submit {
     background-color: darkcyan;
     margin-left: 33%;
-    padding: 15px 32px;
-    font-size: 20px;
-    color: white;
+    padding: 15px 30px;
+    font-size: 25px;
 }
 
 label {
@@ -101,60 +89,9 @@ h1 {
 li {
     background-color: darkcyan;
     margin-top: 10px;
-    padding: 5px 15px;
-    width: 80%;
+    padding: 10px 20px;
+    width: 75%;
     font-size: 18px;
     color: white;
 }
 
-.create {
-    margin-top: 20px;
-    border-top: 1px solid lightgray;
-}
-
-/* Media Queries */
-@media screen and (max-width: 750px) {
-
-body {
-    max-width: 786px;
-}
-
-.wrapper {
-    position: absolute;
-    left: 20%;
-}
-
-a {
-margin-left: 20%;
-}
-
-.go-back {
-    
-    position: relative;
-    left: 55%;
-}
-
-.clear {
-    
-    position: relative;
-    right: 5%;
-    
-}
-}
-
-/* Media Query */
-@media screen and (max-width: 650px) {
-body {
-    min-width: 640px;
-}
-
-.wrapper {
-position: absolute;
-left: 10%;
-}
-
-a {
-  margin-left: 10%;
-}
-
-}

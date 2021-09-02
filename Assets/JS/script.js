@@ -102,6 +102,7 @@ function compare(event) {
     questionsDiv.appendChild(createDiv);
 
 }
+
 // Quiz Over Page
 function allDone() {
     questionsDiv.innerHTML = "";
@@ -163,7 +164,6 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-            // Travels to final page
             window.location.replace("./highscore.html");
         }
     });

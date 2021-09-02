@@ -143,7 +143,7 @@ function allDone() {
     createSubmit.textContent = "Submit";
     questionsDiv.appendChild(createSubmit);
 
-    // Event listener to capture initials and local storage for initials and score
+    // Event listener for initials
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
 
